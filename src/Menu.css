@@ -1,0 +1,8 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(221, 164, 41, 0.452);
+    align-items: center;
+    font-size: 30PX;
+}
+

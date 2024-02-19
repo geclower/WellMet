@@ -1,0 +1,30 @@
+.Home {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+    "Name"
+    "Nav";
+    background-image: url("MMA.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
+  h1 {
+  grid-area: Name;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: antiquewhite ;
+  font-size: 200px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  }
+  
+  .Menu {
+    grid-area: Nav;
+    display: flex;
+  }
+  
