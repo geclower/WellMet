@@ -1,3 +1,16 @@
 .App{
-  background-color: beige;
+  .Home {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+    "Name"
+    "Nav";
+    background-image: url("MMA.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  
 }

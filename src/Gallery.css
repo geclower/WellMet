@@ -1,4 +1,33 @@
-.App{
+.Gallery{
     background-color: antiquewhite;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 10% 75% 10% 10%;
+    grid-template-areas: 
+    "Dpt Dpt"
+    "InfoTag Picture"
+    "Buttons Buttons"
+    "Nav Nav";
+}
 
+.title{
+    grid-area: Dpt;
+    font-size: 50px;
+}
+
+.infoTag{
+    grid-area: InfoTag;
+}
+
+.picture{
+    grid-area: Picture;
+    object-fit: contain;
+}
+
+.buttons{
+    grid-area: Buttons;
+}
+
+.nav{
+    grid-area: Nav;
 }
