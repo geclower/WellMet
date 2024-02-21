@@ -1,6 +1,9 @@
 .Gallery{
     background-color: antiquewhite;
     display: grid;
+    height: 100vh;
+    background-size: cover;
+
     grid-template-columns: 30% 70%;
     grid-template-rows: 10% 75% 10% 10%;
     grid-template-areas: 
@@ -13,21 +16,80 @@
 .title{
     grid-area: Dpt;
     font-size: 50px;
+    background-color: rgba(221, 164, 41, .6);
+    Margin: 0px;
 }
 
 .infoTag{
     grid-area: InfoTag;
-}
+    border: 2px solid grey;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+    font-family: Faustina;
+    
+    }
 
 .picture{
     grid-area: Picture;
-    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;  
+}
+
+img {
+    max-width: 890px;
+    max-height: 570px;
+    margin: 20px;
+    padding: 10px;
+    border: 30px ridge brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 5px grey;  
 }
 
 .buttons{
     grid-area: Buttons;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
 }
 
 .nav{
     grid-area: Nav;
+    
 }
+
+.button {
+  background-color: transparent;
+  background-image: linear-gradient(to bottom, #fff, #f8eedb);
+  border: 0 solid #e5e7eb;
+  border-radius: .5rem;
+  column-gap: 1rem;
+  cursor: pointer;
+  display: flex;
+  font-family: Faustina;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  outline: 2px solid transparent;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-transform: none;
+  transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  box-shadow: -6px 8px 10px rgba(81,41,10,0.1),0px 2px 2px rgba(81,41,10,0.2);
+}
+
+.button:active {
+  background-color: #f3f4f6;
+  box-shadow: -1px 2px 5px rgba(81,41,10,0.15),0px 1px 1px rgba(81,41,10,0.15);
+  transform: translateY(0.125rem);
+}
+

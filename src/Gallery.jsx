@@ -21,7 +21,7 @@ function Gallery() {
 
     let info = res.data.objectIDs;
     setArtArray(info);
-
+    
     // let object = artArray[0];
     // console.log(object);
     // const result = await axios(
@@ -71,12 +71,16 @@ function Gallery() {
       <div className="picture">
       <img src={art.primaryImage} alt="" />
       </div>
-      <InfoTag className="infoTag" />
-      <div className="buttons">
-        <button onClick={nextClick}> Next </button>
-        <button onClick={previousClick}> Previous </button>
+      <div className="infoTag">
+      <InfoTag art={art}/>
       </div>
-      <Menu className="nav" />
+      <div className="buttons">
+        <button onClick={previousClick} className="button"> Previous </button>
+        <button onClick={nextClick} className="button"> Next </button>
+      </div>
+      <div className="nav">
+      <Menu />
+      </div>
     </div>
   );
 }

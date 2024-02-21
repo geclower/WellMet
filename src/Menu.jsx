@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 function Menu() {
   return (
     <nav>
-        <Link to="/">Home</Link>
-        <Link to="/departments">Departments</Link>
-        <Link to="/gallery-walk">Random</Link>
-        <Link to="https://www.metmuseum.org/">Visit</Link>
+        <Link to="/" className='navLink'>Home</Link>
+        <Link to="/departments" className='navLink'>Departments</Link>
+        <Link to="/gallery-walk" className='navLink'>Random</Link>
+        <Link to="https://www.metmuseum.org/" className='navLink'>Visit</Link>
         </nav>
   )
 }

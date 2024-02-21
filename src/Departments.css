@@ -1,4 +1,40 @@
-.dpts{
+.Dpts{
     color: black;
     background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    font-size: 30px;
+    font-family: Faustina;
+    
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(221, 164, 41, .6);
+    Margin: 0;
+    font-family: Faustina;
+    color: white;
+    font-size: 50px;
+    height: 100px;
+}
+
+.List{
+    column-count: 2;
+    margin-left: 30px;
+    max-height: auto;
+}
+
+.dptList{
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+}
+
+.dptList:hover{
+    color: purple;
+    font-size: 35px;
 }

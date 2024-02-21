@@ -9,7 +9,7 @@ import "./Home.css"
 function Home() {
   return (
     <div className='Home'>
-        <h1>Well Met!</h1>
+        <h1>Well<br/>Met!</h1>
       <Menu className="Menu"/>
     </div>
   )

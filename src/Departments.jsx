@@ -30,7 +30,7 @@ function Departments() {
       <ul className="List">
         {
             departments.map(({ departmentId, displayName }) => 
-                <Link to={`/gallery-walk/${departmentId}`}>
+                <Link to={`/gallery-walk/${departmentId}`} className="dptList">
                     <li key={departmentId}>{displayName}</li>
                 </Link>
             )

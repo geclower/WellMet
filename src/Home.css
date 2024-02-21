@@ -17,10 +17,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: antiquewhite ;
+  color: white ;
   font-size: 200px;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+  font-family: Faustina;
+  text-align: center;
   }
   
   .Menu {
