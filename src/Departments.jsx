@@ -21,7 +21,8 @@ function Departments() {
   };
 
   useEffect(() => {
-    getDpts();
+    getDpts(); 
+    return () => {};
   }, []);
 
   return (

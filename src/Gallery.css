@@ -5,7 +5,7 @@
     background-size: cover;
 
     grid-template-columns: 30% 70%;
-    grid-template-rows: 10% 75% 10% 10%;
+    grid-template-rows: 10% 70% 10% 10%;
     grid-template-areas: 
     "Dpt Dpt"
     "InfoTag Picture"
@@ -40,7 +40,7 @@
 
 img {
     max-width: 890px;
-    max-height: 570px;
+    max-height: 550px;
     margin: 20px;
     padding: 10px;
     border: 30px ridge brown;

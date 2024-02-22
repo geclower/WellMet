@@ -7,9 +7,10 @@ function InfoTag({art}) {
     <div className='artInfo'>
         <h3>{art.title}</h3>
         <p>Artist: {art.artistDisplayName}</p>
+        <p>Date: {art.objectDate}</p>
         <p>Culture: {art.culture}</p>
         <p>Medium: {art.medium}</p>
-        <Link to={art.objectURL}>Learn More</Link>
+        <Link to={art.objectURL} target='blank'>Learn More</Link>
     </div>
   )
 }

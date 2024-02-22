@@ -8,7 +8,7 @@ function Menu() {
         <Link to="/" className='navLink'>Home</Link>
         <Link to="/departments" className='navLink'>Departments</Link>
         <Link to="/gallery-walk" className='navLink'>Random</Link>
-        <Link to="https://www.metmuseum.org/" className='navLink'>Visit</Link>
+        <Link to="https://www.metmuseum.org/" className='navLink' target='blank' >Visit</Link>
         </nav>
   )
 }
