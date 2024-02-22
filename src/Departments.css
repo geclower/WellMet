@@ -10,7 +10,7 @@
     
 }
 
-h2{
+.header2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,4 +37,25 @@ h2{
 .dptList:hover{
     color: purple;
     font-size: 32px;
+}
+
+@media (max-width: 650px) {
+    .Dpts{
+        font-size: 25px;
+        height: auto;
+    }
+    .dptList:hover{
+        color: purple;
+        font-size: 27px;
+    }
+
+    .List{
+        column-count: 1;
+    }
+
+    .header2{
+        font-size: 40px;
+        height: 100px;
+        color: white;
+    }
 }

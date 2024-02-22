@@ -18,3 +18,15 @@ nav {
 .navLink:hover{
     font-size: 50px;
 }
+
+@media (max-width: 650px) {
+  nav {
+    flex-wrap: wrap;
+    height: 60px;
+    font-size: 30px;
+  }
+
+  .navLink:hover{
+    font-size: 32px;
+}
+}

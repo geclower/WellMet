@@ -27,7 +27,7 @@ function Departments() {
 
   return (
     <div className="Dpts">
-      <h2>Departments</h2>
+      <h2 className="header2">Departments</h2>
       <ul className="List">
         {
             departments.map(({ departmentId, displayName }) => 

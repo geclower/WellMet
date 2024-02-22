@@ -1,30 +1,41 @@
 .Home {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 90% 10%;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 90% 10%;
+  grid-template-areas:
     "Name"
     "Nav";
-    background-image: url("MMA.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-  }
-  
-  h1 {
+  background-image: url("MMA.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+h1 {
   grid-area: Name;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white ;
+  color: white;
   font-size: 200px;
   font-family: Faustina;
   text-align: center;
+}
+
+.Menu {
+  grid-area: Nav;
+  display: flex;
+}
+
+@media (max-width: 650px) {
+.Home{
+  grid-template-rows: 85% 15%;
+}
+
+  h1 {
+    font-size: 150px;
   }
-  
-  .Menu {
-    grid-area: Nav;
-    display: flex;
-  }
-  
+}
+

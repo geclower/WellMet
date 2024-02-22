@@ -34,7 +34,7 @@ function Gallery() {
         setIndex((prev) => prev + 1);
 
     const result = await axios(
-      `https://collectionapi.metmuseum.org/public/collection/v1/objects/${artArray[index]}`
+      `https://collectionapi.metmuseum.org/public/collection/v1/objects/${artArray[index + 1]}`
     );
 
     if (result.data.isPublicDomain) {
@@ -43,15 +43,14 @@ function Gallery() {
       nextClick();
     }
 }
-console.log(index)
-console.log(artArray[index])
+
   };
 
   const previousClick = async () => {
     setIndex((prev) => prev - 1);
 
     const result = await axios(
-      `https://collectionapi.metmuseum.org/public/collection/v1/objects/${artArray[index]}`
+      `https://collectionapi.metmuseum.org/public/collection/v1/objects/${artArray[index - 1]}`
     );
 
     if (result.data.isPublicDomain) {
@@ -59,8 +58,7 @@ console.log(artArray[index])
     } else {
       previousClick();
     }
-    console.log(index)
-console.log(artArray[index])
+  
   };
 
   return (
