@@ -13,7 +13,7 @@ function Departments() {
     const res = await axios(
       `https://collectionapi.metmuseum.org/public/collection/v1/departments`
     );
-
+console.log(res)
     const dptList = res.data.departments
     console.log(dptList)
 

@@ -3,7 +3,7 @@ nav {
     justify-content: space-around;
     background-color: rgba(221, 164, 41, 0.7);
     align-items: center;
-    font-size: 40px;
+    
     font-family: Faustina;
     font-weight: bold;
     height: 60px;
@@ -13,6 +13,7 @@ nav {
 .navLink{
     color: white;
     text-decoration: none;
+    font-size: 40px;
 }
 
 .navLink:hover{
@@ -22,7 +23,7 @@ nav {
 @media (max-width: 650px) {
   nav {
     flex-wrap: wrap;
-    height: 60px;
+    height: 90px;
     font-size: 30px;
   }
 
@@ -30,3 +31,4 @@ nav {
     font-size: 32px;
 }
 }
+

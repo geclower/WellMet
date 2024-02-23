@@ -4,11 +4,58 @@
     justify-content: center;
     padding-left: 30px;
     padding-right: 30px;
+    padding-bottom: 30px;
     
 }
+.limit{
+    white-space: wrap;
+    overflow: hidden;
+    max-height: 550px;
+}
+
 h3{
     font-size: 30px;
 }
 p{
     font-size: 20px;
+}
+
+a{
+    font-size: 20px;
+}
+
+@media (max-height: 800px){
+    .limit{
+        white-space: wrap;
+        overflow: hidden;
+        max-height: 450px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 18px;
+    }
+    
+    a{
+        font-size: 18px;
+    }
+}
+
+@media (max-height: 600px){
+    .limit{
+        white-space: wrap;
+        overflow: hidden;
+        max-height: 300px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    p{
+        font-size: 18px;
+    }
+    
+    a{
+        font-size: 18px;
+    }
 }
